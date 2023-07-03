@@ -117,7 +117,7 @@ header{
     display: flex;
     flex-direction: column;
 
-    margin-top: 240px;
+    margin-top: 510px;
     text-align: center;
 
     color: #F6F7FB;
@@ -158,6 +158,18 @@ header button{
     border: none;
 }
 header button:hover{
+    cursor: pointer;
+}
+
+/* main-scroll-icon */
+.main-scroll-icon{
+    position: fixed;
+    bottom: 49px; 
+    right: 67px; 
+}
+.main-scroll-icon img{
+    height: 80px;
+    width: 80px;
     cursor: pointer;
 }
 
@@ -308,7 +320,12 @@ header button:hover{
     padding-left: 20px;
     padding-right: 20px;
     border: none;
+    cursor: pointer;
 }
+.container-community-btn input.active {
+    background-color: #17181A;
+    color: #F6F7FB;
+  }
 .container-community .community-box{
     display: flex;
     flex-direction: row;
@@ -414,6 +431,44 @@ header button:hover{
     color: #F6F7FB;
     font-size: 24px;
     line-height: 35px;
+}
+
+/* modal */
+.quiz-correct-modal, .quiz-incorrect-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 506px;
+    height: 300px;
+}
+.quiz-correct-modal img,.quiz-incorrect-modal img{
+    width: 128px;
+    height: 128px;
+}
+.quiz-modal-content{
+    color: #95969D;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.quiz-correct-modal-content{
+    color: #FF5B16;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.quiz-incorrect-modal-content{
+    color: #17181A;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 /* footer */

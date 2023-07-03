@@ -24,10 +24,10 @@
 
     <!-- header -->
     <header>
-        <div class="search-bar">
+        <!-- <div class="search-bar">
             <form action="">
-                <input type="image" src="./main-header-search.png" alt="Submit">
-                <input type="text" placeholder="오늘은 어떤 인생 조언이 듣고 싶나요?">
+                <input id="search-bar-btn" type="image" src="./main-header-search.png" alt="Submit">
+                <input id="search-input" type="text" placeholder="오늘은 어떤 인생 조언이 듣고 싶나요?" >
             </form>
         </div>
         <div class="popular-text">
@@ -38,7 +38,7 @@
             <p>이용하면 돼</p>
             <p>하이루</p>
             <p>방가루</p>
-        </div>
+        </div> -->
         <div class="header-explain">
             <p>매일 하나씩 배워가는 인생조언</p>
             <p>어렵고 막막한 생활지식 배우기</p>
@@ -51,6 +51,11 @@
         <button>지금 시작하기</button>
     </header>
 
+    <!-- main-scroll-icon -->
+    <div class="main-scroll-icon">
+        <img onclick="scrollToTop()" src="./main-scroll-icon.png" alt="Scroll Icon">
+    </div>
+
     <!-- main-container -->
     <div class="main-container">
         <div class="container-quiz">
@@ -60,6 +65,16 @@
                 <p>문제</p>
                 <input type="submit" value="정답" id="correctA">
                 <input type="submit" value="오답" id="incorrectA">
+            </div>
+            <div class="quiz-correct-modal">
+                <p class="quiz-correct-modal-content">정답이에요!</p>
+                <img src="./correct.png" alt="">
+                <p class="quiz-modal-content">완벽히 이해했군요! 다음 퀴즈도 풀어보세요!</p>
+            </div>
+            <div class="quiz-incorrect-modal">
+                <p class="quiz-incorrect-modal-content">정답이에요!</p>
+                <img src="./incorrect.png" alt="">
+                <p class="quiz-modal-content">완벽히 이해했군요! 다음 퀴즈도 풀어보세요!</p>
             </div>
         </div>
         <div class="container-explain">
@@ -151,5 +166,7 @@
     <footer>
         <img src="./footer.png" alt="">
     </footer>
+    <script src="./mainJs.js"></script>
+    <script src="./scroll.js"></script>
 </body>
 </html>
