@@ -1,5 +1,4 @@
-// $("#current-situation").hide();
-$("#study-place").hide();
+$("#current-situation").hide();
 
 $("#nav2-first").css("color","#F6F7FB");
 $("#nav2-first").click(function(){
@@ -133,6 +132,8 @@ $(document).ready(function() {
 $("#not-all-score").hide();
 $("#nav-all-score").css("border-bottom", "3px solid #FF5B16");
 $("#nav-all-score").css("color","#17181A");
+$(".not-all-score-conatiner-text-second").hide();
+$(".not-all-score-container-footer-text").hide();
 
 $("#nav-all-score").click(function(){
   $("#all-score").show();
@@ -141,6 +142,14 @@ $("#nav-all-score").click(function(){
   $("#nav-all-score").css("color","#17181A");
   $("#nav-not-all-score").css("border-bottom", "3px solid #F6F7FB");
   $("#nav-not-all-score").css("color","#95969D");
+
+  $(".not-all-score-conatiner-text-second").hide();
+  $(".not-all-score-container-footer-text").hide();
+  $(".score-container-text-second").show();
+  $(".score-container-text-third").show();
+  $(".score-container-footer-text").show();
+  $(".quiz-note").show();
+  $(".check").show();
 });
 $("#nav-not-all-score").click(function(){
   $("#not-all-score").show();
@@ -149,6 +158,14 @@ $("#nav-not-all-score").click(function(){
   $("#nav-not-all-score").css("color","#17181A");
   $("#nav-all-score").css("border-bottom", "3px solid #F6F7FB");
   $("#nav-all-score").css("color","#95969D");
+
+  $(".not-all-score-conatiner-text-second").show();
+  $(".not-all-score-container-footer-text").show();
+  $(".score-container-text-second").hide();
+  $(".score-container-text-third").hide();
+  $(".score-container-footer-text").hide();
+  $(".quiz-note").hide();
+  $(".check").hide();
 });
 
 
