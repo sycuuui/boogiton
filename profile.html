@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./profileStyle.css">
+</head>
+<body>
+     <!-- nav bar -->
+    <!-- copy -->
+    <nav>
+        <div class="nav-left">
+            <img src="./main-nav-logo.png" alt="로고">
+            <a href="./main.html" style=" color: #95969D;" >홈</a>
+            <a class="nav-second" style="color: #95969D;" href="./study.html">오늘의 공부</a>
+            <a class="nav-third" href="#" style=" color: #95969D;">소통 게시판</a>
+        </div>
+        <div class="nav-right">
+            <img class="nav-icon-first" src="./nav-icon-first.png" alt="">
+            <img class="nav-icon-second" src="./nav-icon-second.png" alt="">
+            <img class="nav-icon-third" src="./nav-icon-third.png" alt="">
+        </div>
+    </nav>
+
+    <!-- header -->
+    <!-- copy -->
+    <header class="study-title">
+        <p>어른이 되기 위한 우리의</p>       
+        <p>오늘의 공부</p>
+    </header>
+
+    <!-- nav2 -->
+    <!-- copy -->
+    <nav id="nav2">
+        <p id="nav2-first">프 로 필</p>
+    </nav>
+
+    <!-- main-scroll-icon -->
+    <div class="main-scroll-icon">
+        <img src="./main-scroll-icon.png" alt="Scroll Icon">
+    </div>
+
+    <div class="edit-user-info-container">
+        <div class="text-box">
+            <img src="./img/profile-logo.png" alt="">
+            <div style="display: flex; flex-direction: row;">
+                <p class="text-highlight">후배</p>
+                <p>님의 서비스에 이용되는</p>
+                <p class="text-highlight">프로필</p>
+                <p>을 작성해주세요.</p>
+            </div>
+        </div>
+        <div id="user-basic-info">
+            <p class="user-info-title">기본 정보</p>
+            <p>게시글에서 내 정보를 설명해줄 수 있어요.</p>
+        </div>
+        <div id="user-img">
+            <p class="user-info-title">프로필 사진</p>
+            <div id="user-img-box">
+                <img src="./img/user-img.png" alt="">
+            </div>
+            <img id="user-edit-img" src="./img/suer-img-edit.png" alt="">
+        </div>
+        <div id="user-name">
+            <p class="user-info-title">이름</p>
+            <form action="" method="post">
+                <input type="text" placeholder="프로필에 사용할 이름을 8자 이내로 입력해주세요.">
+            </form>
+        </div>
+        <div id="user-introduce">
+            <p class="user-info-title">한 줄 소개</p>
+            <form action="" method="post">
+                <input type="textarea" placeholder="소개글을 40자 이내로 작성해주세요.">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
